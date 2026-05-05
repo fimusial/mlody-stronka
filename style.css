@@ -1,0 +1,98 @@
+html {
+    --bg-dark: #222;
+    --bg-light: #3c3c3c;
+    --accent: #6a1515d4;
+    --text: #fff;
+}
+
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: var(--text);
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-light);
+}
+
+button {
+    cursor: pointer;
+    height: 35px;
+    border-radius: 10px;
+    outline: 2px solid var(--accent);
+    background-color: var(--bg-light);
+    transition: all 0.1s ease;
+    font-size: large;
+}
+
+button:hover {
+    transform: scale(0.95);
+}
+
+input[type='text'] {
+    height: 20px;
+    background-color: var(--bg-dark);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 300px auto;
+    min-width: 600px;
+}
+
+#menu {
+    background-color: var(--bg-dark);
+    border-right: 1px solid var(--accent);
+    box-shadow: 2px 0px 5px 0px var(--accent);
+}
+
+#menu button {
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+#polska {
+    font-weight: bolder;
+    background-image: linear-gradient(white, white 60%, red 40%, red);
+    color: transparent;
+    background-clip: text;
+}
+
+#content {
+    min-width: 600px;
+    margin-top: 35px;
+}
+
+#yt-inputs {
+    margin-bottom: 10px;
+}
+
+#yt-inputs input {
+    width: 50%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#slop {
+    width: 75%;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+}
